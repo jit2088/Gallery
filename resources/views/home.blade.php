@@ -7,15 +7,15 @@
             <img src="https://instagram.fyyc3-1.fna.fbcdn.net/vp/d67866dfdab8b3c2ce0dd8f6dbd2a778/5E077EC3/t51.2885-15/e35/s150x150/58986771_2241173636143194_4566704359460022013_n.jpg?_nc_ht=instagram.fyyc3-1.fna.fbcdn.net&_nc_cat=106" class="rounded-circle">
         </div>
         <div class="col-9 pt-5">
-            <div><h1>freecodecamp</h1></div>
+        <div><h1>{{$user->username}}</h1></div>
             <div class="d-flex">
                 <div class="pr-5"><strong>153</strong> posts</div>
                 <div class="pr-5"><strong>23k</strong> followers</div>
                 <div class="pr-5"><strong>212</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">freeCodeCamp.org</div>
-            <div>people learning to code together</div>
-            <div><a href="www.usask.ca">www.usask.ca</a></div>
+        <div class="pt-4 font-weight-bold">{{$user->profile->title}}</div>
+        <div>{{$user->profile->description}}</div>
+            <div><a href="#">{{$user->profile->url}}</a></div>
         </div>    
     </div>
     <div class="row pt-5">
